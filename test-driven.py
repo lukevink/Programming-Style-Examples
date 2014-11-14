@@ -13,11 +13,6 @@ class ElectionResultsTest(unittest.TestCase):
         self.results.load()
         assert self.results!=None
         assert self.results.file!=None
-        
-    def testStateCount(self):
-        self.results.load()
-        state_count = self.results.state_count()
-        assert state_count==2
 
     def testStates(self):
         self.results.load()
